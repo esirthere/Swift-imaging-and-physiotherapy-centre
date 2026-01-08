@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+header {
+    background-color: #0a6ebd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #054a91;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #0a6ebd;
+}
+
+.service-table{
+    display: none;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.service-table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.service-table th,
+.service-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.service-table th {
+    background-color: #0a6ebd;
+    color: white;
+}
+
+.service-table tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.card button{
+    margin-top: 10px;
+}
+
+.services {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgb(104, 92, 92);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #0a6ebd;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Image Slider */
+.slider {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    display: block;
+}
+/* Mobile screens */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px; /* base size */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 1rem; /* increase table text */
+    }
+
+    th, td {
+        padding: 12px 10px; /* more spacing */
+    }
+
+    input[type="text"] {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+@media (max-width: 768px) {
+    table {
+        font-size: 1.1rem;
+    }
+}
+

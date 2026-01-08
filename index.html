@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <title>Swift Imaging and Physiotherapy Centre</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Swift Imaging and Physiotherapy Centre</h1>
+    <p>Quality Healthcare for Everyone</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="slider">
+    <img src="images/slide1.jpeg" class="slide active">
+    <img src="images/slide2.jpeg" class="slide">
+    <img src="images/slide3.jpeg" class="slide">
+</section>
+
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Swift Imaging and Physiotherapy Centre is dedicated to providing modern,
+        affordable, and quality healthcare services.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>🖥️Ultrasound</h3>
+            <button onclick="toggleService('ultrasound')">View Services</button>
+            <div id="ultrasound" class="service-table">
+                <table>
+                    <thead>
+                    <th>EXAMINATION</th>
+                    <th>PRICE</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>OBSTETRIC U/S</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>PELVIC U/S</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>ABDOMINAL U/S</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>SMALL PARTS(Testicular/Thyroid/Regional)</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>DOPPLER U/S</t>
+                        <td>UNILAT-2,500,BILATERAL-4,000</td>
+                    </tr>
+                    <tr>
+                        <td>MSK</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>ABDOMINAL/PELVIC</td>
+                        <td>2,500</td>
+                    </tr>
+                    <tr>
+                        <td>BREAST U/S</td>
+                        <td>UNILAT-1,500,BILAT-4000</td>
+                    </tr>
+                    <tr>
+                        <td>ECHO</td>
+                        <td>8,500</td>
+                    </tr>
+                    <tr>
+                        <td>ECG</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>CRANIAL U/S</td>
+                        <td>3,500</td>
+                    </tr>
+                    <tr>
+                        <td>TVS</td>
+                        <td>2,000</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <h3>🩻X-ray</h3>
+            <button onclick="toggleService('x-ray')">View Services</button>
+            <div id="x-ray" class="service-table">
+                <table>
+                    <thead>
+                        <tr>
+                    <th>EXAMINATION</th>
+                    <th>PRICE</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CHEST X RAY</td>
+                        <td>1,000</td>
+                    </tr>
+                 <tr>
+                    <td>ELBOW X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>HAND X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>TIB/FIB X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>FEMUR X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>KNEE X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>FOREARM X RAY</td>
+                    <td>1,000 </td>
+                </tr>
+                <tr>
+                    <td>SHOULDER X RAY</td>
+                    <td>1,000 </td>
+                </tr>
+                <tr>
+                    <td>CLAVICLE X RAY</td>
+                    <td>1,000 </td>
+                </tr>
+                <tr>
+                    <td>SKULL X RAY</td>
+                    <td>1,400</td>
+                </tr>
+                <tr>
+                    <td>MANDIBLE X RAY</td>
+                    <td>1,200 </td>
+                </tr>
+                <tr>
+                    <td>PNS X RAY</td>
+                    <td>1,300 </td>
+                </tr>
+                <tr>
+                    <td>HIP X RAY</td>
+                    <td>1,300</td>
+                </tr>
+                <tr>
+                    <td>PELVIC X RAY</td>
+                    <td>1,300</td>
+                </tr>
+                <tr>
+                    <td>FOOT X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>CALCANEAL X RAY</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>ABDOMINAL X RAY</td>
+                    <td>1,200</td>
+                </tr>
+                <tr>
+                    <td>NECK X RAY(SOFT TISSUE)</td>
+                    <td>1,400</td>
+                </tr>
+                <tr>
+                    <td>LUMBAR-SACRAL</td>
+                    <td>1,500</td>
+                </tr>
+                <tr>
+                    <td>THORACIC SPINE</td>
+                    <td>1,500</td>
+                </tr>
+                <tr>
+                    <td>BARIUM MEAL</td>
+                    <td>3,500</td>
+                </tr>
+                <tr>
+                    <td>MCU</td>
+                    <td>5,000</td>
+                </tr>
+                <tr>
+                    <td>BARIUM SWALLOW</td>
+                    <td>3,500</td>
+                </tr>
+                <tr>
+                    <td>HSG X RAY</td>
+                    <td>5,000</td>
+                </tr>
+                <tr>
+                    <td>BARIUM ENEMA</td>
+                    <td>6,000</td>
+                </tr>
+            </tbody>
+         </table>
+         </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <h3>🤸Physiotherapy</h3>
+            <button onclick="toggleService('physiotherapy')">View Services</button>
+            <div id="physiotherapy" class="service-table">
+                <table>
+                    <thead>
+                    <th>EXAMINATION</th>
+                    <th>PRICE</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>PHYSIOTHERAPY FIRST VISIT</td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <td>PHYSIOTHERAPY RE-VISIT</td>
+                        <td>600</td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">❤️Electrocardiogram(ECG)</div>
+        <div class="card">🦴Orthopedic</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Githurai 45, New Manchester house - 1st Floor,Room 21</p>
+    <p>🏤 P.O Box 10741-00100,Nairobi</p>
+    <p>📞 +254 795394526 / 0728899365</p>
+</section>
+
+<footer>
+    <p>&copy; <span id="year"></span> Swift Imaging and Physiotherapy Centre. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
