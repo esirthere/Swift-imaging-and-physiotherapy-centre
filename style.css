@@ -43,7 +43,6 @@ h2 {
 }
 
 .service-table table{
-    width: 100%;
     border-collapse: collapse;
 }
 
@@ -76,7 +75,6 @@ h2 {
 .card {
     background: rgb(104, 92, 92);
     padding: 20px;
-    width: 200px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -140,4 +138,13 @@ footer {
         font-size: 1.1rem;
     }
 }
+@media (max-width: 768px){
+    .services-container {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 100%;
+    }
+}
+
 
